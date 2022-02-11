@@ -10,6 +10,7 @@ django-allauth = "*"
 environs = {extras = ["django"], version = "*"}
 django-debug-toolbar = "*"
 pillow = "*"
+gunicorn = "*"
 
 [dev-packages]
 
