@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build: .
-    command: gunicorn config.wsgi -b 0.0.0.0:8000
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
@@ -11,7 +11,7 @@ services:
     depends_on:
       - db
     environment:
-      - "DJANGO_SECRET_KEY=django-insecure-u=8w^cbad3-+m_rr20vdqrta23rhe(**015#$$d(l_yqhx16^4y"  
+      - "DJANGO_SECRET_KEY=AycnleSjSflwXX_Wkmqd5gzSloFdBPmsYc4dorTSJYWoGIVq3pImVw"  
       - "DJANGO_DEBUG=True"
       - "DJANGO_SECURE_SSL_REDIRECT=False"
       - "DJANGO_SECURE_HSTS_SECONDS=0" 
